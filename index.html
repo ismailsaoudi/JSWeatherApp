@@ -7,52 +7,46 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>weather app</title>
 </head>
 
 <body>
-  <header>
-    Title Here
+  <header class="title">
+    <h1> Weather Dashboard</h1>
   </header>
-  <main class="Container">
-    <section class="left-side">
-      <textarea name="search for a city" id="searchBox">
 
-</textarea>
-      <button>
-        Search
-      </button>
-    </section>
-
-    <section class="right-side">
-      <div class="main-search">
-        <div class="card" style="width: 18rem;">
-          <img src="..." class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
-          </div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item1">An item</li>
-            <li class="list-group-item2">A second item</li>
-            <li class="list-group-item3">A third item</li>
-          </ul>
-          <div class="card-body">
-            <a href="#" class="card-link">Card link</a>
-            <a href="#" class="card-link">Another link</a>
-          </div>
+  <main>
+    <section class="container">
+      <div>
+        <div class="input-group input-group-lg">
+          <input type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm">
         </div>
       </div>
-      <div class="fiveDaysData">
-
+      <div class="btn">
+        <button type="button" class="btn btn-primary btn-lg btn-block">Search...</button>
+      </div>
+      <div>
+        <button type="button" class="btn btn-secondary btn-lg btn-block">Clear...</button>
+      </div>
+    </section>
+    <nav>
+      <div class="card" style="width: 18rem;">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title"></h5>
+          <p class="card-text"></p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">TEMP</li>
+          <li class="list-group-item">WIND</li>
+          <li class="list-group-item">HUMIDITY</li>
+        </ul>
 
       </div>
 
-    </section>
-
+    </nav>
   </main>
-
 </body>
 
 <script src="./index.js"></script>
