@@ -21,8 +21,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    align-content: space-between;
     background: rgb(216, 216, 232);
     border-radius: 20px;
     border: 1px solid;
     border-color: rgb(0, 0, 253);
+    margin-bottom: 50px;
+
+}
+
+.primaryCard{
+    display: flex;
+    justify-content: center;
 }
