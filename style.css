@@ -1,1 +1,11 @@
-const apiUrl
+header {
+    padding: 60px;
+    text-align: center;
+    background: #1abc9c;
+    color: white;
+    font-size: 30px;
+  }
+.container{
+    display: flex;
+    flex-direction:column;
+}
