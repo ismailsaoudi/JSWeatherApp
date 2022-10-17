@@ -1,27 +1,22 @@
-var searchBox = document.getElementById("search");
-var serchBtn = document.getElementById("btn") ;
-var cityLat = currentData.coord.lat
-var cityLon = currentData.coord.lon
 
-var currenticon= document.getElementById("icon")
-var currentTemp= document.getElementById("temp")
-var currentHumidity= document.getElementById("humidity")
-var currentUvi= document.getElementById("uvi")
 
-var key = "32fbbd3e4014481fe555bbcc5505abcc";
-var city = "tunis";
+const key = "32fbbd3e4014481fe555bbcc5505abcc";
+const cityName = "haffouz"
 
-const apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${cityLat}&lon=${cityLon}&appid=${Key}&units=imperial`;
+ const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&units=metric&apikey=${key}`;
 
 
 
+ function fetchWeather(data){
+     fetch(apiUrl)
+     .then((response) => response.json())
+     .then((data) => console.log(data));
+ }
+
+ fetchWeather()
+
+  function displayCurrentWeather
 
 
 
-function fetchWeather(data) {
-  fetch(apiUrl)
-    .then((response) => response.json())
-    .then((data) => console.log(data));
-}
 
-fetchWeather();
