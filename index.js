@@ -1,4 +1,9 @@
 
+document.getElementById('searchBtn').addEventListener('click', event => {
+    let cityName = document.getElementById('cityName').value
+    console.log(cityName)
+})
+
 
 const key = "32fbbd3e4014481fe555bbcc5505abcc";
 const cityName = "haffouz"
@@ -15,7 +20,7 @@ const cityName = "haffouz"
 
  fetchWeather()
 
-  function displayCurrentWeather
+ 
 
 
 
