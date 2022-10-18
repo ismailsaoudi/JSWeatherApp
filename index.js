@@ -67,7 +67,7 @@ document.getElementById("searchBtn").addEventListener("click", (event) => {
         var temp2 = data1.list[3].main.temp;
         var wind2 = data1.list[3].wind.speed;
         var humidity2 = data1.list[3].main.humidity;
-        var unixTimestamp2 = data1.list[19].dt
+        var unixTimestamp2 = data1.list[16].dt
         var dateObject2 = new Date(unixTimestamp2*1000)
         var date2 =  dateObject2.toLocaleString()
 
@@ -75,7 +75,7 @@ document.getElementById("searchBtn").addEventListener("click", (event) => {
         var wind3 = data1.list[4].wind.speed;
         var humidity3 = data1.list[4].main.humidity;
 
-        var unixTimestamp3 = data1.list[29].dt
+        var unixTimestamp3 = data1.list[24].dt
         var dateObject3 = new Date(unixTimestamp3*1000)
         var date3 =  dateObject3.toLocaleString()
 
@@ -83,7 +83,7 @@ document.getElementById("searchBtn").addEventListener("click", (event) => {
         var wind4 = data1.list[5].wind.speed;
         var humidity4 = data1.list[5].main.humidity;
 
-        var unixTimestamp4 = data1.list[39].dt
+        var unixTimestamp4 = data1.list[30].dt
         var dateObject4 = new Date(unixTimestamp4*1000)
         var date4 =  dateObject4.toLocaleString()
     
